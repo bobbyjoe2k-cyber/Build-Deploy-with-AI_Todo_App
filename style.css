@@ -1,0 +1,98 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.todo-container{
+    background: powderblue;
+    padding:2rem;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    text-align: center;
+    color: #333;
+}
+
+.input-section{
+    display:flex;
+    margin-bottom: 1rem;
+}
+#task-input{
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px
+}
+#add-btn{
+    padding: 0.5rem 1rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+#add-btn:hover{
+    background: #0056b3;
+}
+
+ /* Insert li's form javascript  */
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 0.5rem;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+li.completed{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+button{
+    cursor: pointer;
+}
+.action-buttons button{
+    margin-left: 5px;
+    border: none;
+    background: none;
+    font-size: 1rem;
+}
+
+.filter-section{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: #eee;
+}
+
+.filter-btn{
+    padding: 0.3rem 0.7rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #eee;
+
+}
+.filter-btn.active{
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
